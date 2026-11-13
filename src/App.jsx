@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const phone = '03318362256';
-const email = 'webtellers@gmail.com';
+const email = 'askwebtellers@gmail.com';
 
 const services = [
   {
@@ -321,7 +321,7 @@ function ServiceEnquiryDialog({ onClose, service }) {
       formData.get('message'),
     ].join('\n');
 
-    setFeedback('Your email app should open with your enquiry ready to send. If it does not, email webtellers@gmail.com.');
+    setFeedback('Your email app should open with your enquiry ready to send. If it does not, email askwebtellers@gmail.com.');
     window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }
 
@@ -518,7 +518,7 @@ function ContactForm() {
       formData.get('message'),
     ].join('\n');
 
-    setFeedback('Your email app should open with your enquiry ready to send. If it does not, email webtellers@gmail.com.');
+    setFeedback('Your email app should open with your enquiry ready to send. If it does not, email askwebtellers@gmail.com.');
     window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }
 
